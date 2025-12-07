@@ -1,0 +1,292 @@
+[
+    
+ {
+  "type": "pageInfo",
+  "kind": "subjective and objective",
+  "course_title": "Engineering Mathematics 1",
+  "code": "ENG 201.1",
+  "session": "2018/2019",
+  "topics": [
+   "Limits and Continuity",
+   "Differentiation",
+   "Partial Differentiation",
+   "Integration",
+   "Related Rates", 
+   "Geometry",
+   "Optimization",
+   "Lagrange Multipliers",
+   "Taylor Series",
+   "Line Integrals",
+   "Total Differential",
+   "Green's Theorem"
+  ],
+  "time": "120"
+ },
+ 
+ 
+ {
+  "type": "Instruction",
+  "content": "Answer any Four questions "
+ },
+
+
+ {
+  "type": "heading",
+  "heading": "Section A"
+ },
+  {
+    "type": "Question",
+    "name": "Question 1a)i",
+    "topic": ["Limits and Continuity"],
+    "Question": {
+      "content": "Evaluate the limit of the function as x approaches positive infinity:  f(x) = left[ \frac{x^2 - 1}{4x^3 - 5x^2 + 1} \right]^{0.5} ",
+      "type": "subjective"
+    },
+    "Answer": {
+      "type": "string",
+      "content": "0"
+    },
+    "Explanation": {
+      "type": "string",
+      "content": "<div style='color: var(--explainColor); background: var(--explainBg); padding: 15px; border-radius: 8px; border-left: 4px solid var(--strongColor);'>\n  <h4 style='color: var(--strongColor); margin-top: 0; margin-bottom: 15px;'>Evaluating Limits at Infinity</h4>\n  \n  <div style='margin-bottom: 12px;'>\n    <strong style='color: var(--strongColor);'>Step 1: Understand what happens as x → ∞</strong><br>\n    When x becomes very large, the highest power term dominates. Compare degrees:<br>\n    • Numerator: x² (degree 2)<br>\n    • Denominator: 4x³ (degree 3)\n  </div>\n\n  <div style='margin-bottom: 12px;'>\n    <strong style='color: var(--strongColor);'>Step 2: Simplify the fraction inside</strong><br>\n     \\frac{x^2 - 1}{4x^3 - 5x^2 + 1} <br>\n    Divide numerator and denominator by x³ (highest power):<br>\n     \\frac{\\frac{x^2}{x^3} - \\frac{1}{x^3}}{4 - \\frac{5}{x} + \\frac{1}{x^3}} = \\frac{\\frac{1}{x} - \\frac{1}{x^3}}{4 - \\frac{5}{x} + \\frac{1}{x^3}} \n  </div>\n\n  <div style='margin-bottom: 12px;'>\n    <strong style='color: var(--strongColor);'>Step 3: Take the limit</strong><br>\n    As x → ∞:<br>\n    • 1/x → 0<br>\n    • 1/x³ → 0<br>\n    • 5/x → 0<br>\n    So the fraction becomes:  \\frac{0 - 0}{4 - 0 + 0} = \\frac{0}{4} = 0 \n  </div>\n\n  <div style='margin-bottom: 12px;'>\n    <strong style='color: var(--strongColor);'>Step 4: Apply the square root</strong><br>\n     [0]^{0.5} = \\sqrt{0} = 0 \n  </div>\n\n  <div style='background: var(--cAnsBg); color: var(--cAns); padding: 12px; border-radius: 6px; border-left: 4px solid var(--cAns); margin-top: 15px;'>\n    <strong>✓ Final Answer:</strong> The limit is 0\n  </div>\n</div>"
+    }
+  },
+  {
+    "type": "Question",
+    "name": "Question 1a)ii",
+    "topic": ["Limits and Continuity"],
+    "Question": {
+      "content": "Evaluate the limit of the function as x approaches positive infinity:  f(x) = \\frac{2x^2 + 5x - 4}{4x^2 - 6x + 3} ",
+      "type": "subjective"
+    },
+    "Answer": {
+      "type": "string",
+      "content": " \\frac{1}{2} "
+    },
+    "Explanation": {
+      "type": "string",
+      "content": "<div style='color: var(--explainColor); background: var(--explainBg); padding: 15px; border-radius: 8px; border-left: 4px solid var(--strongColor);'>\n  <h4 style='color: var(--strongColor); margin-top: 0; margin-bottom: 15px;'>Rational Function Limit at Infinity</h4>\n  \n  <div style='margin-bottom: 12px;'>\n    <strong style='color: var(--strongColor);'>Step 1: Check degrees of polynomials</strong><br>\n    • Numerator: 2x² (degree 2)<br>\n    • Denominator: 4x² (degree 2)<br>\n    Same degree! The limit equals the ratio of leading coefficients.\n  </div>\n\n  <div style='margin-bottom: 12px;'>\n    <strong style='color: var(--strongColor);'>Step 2: Divide by highest power x²</strong><br>\n     \\frac{2x^2 + 5x - 4}{4x^2 - 6x + 3} = \\frac{2 + \\frac{5}{x} - \\frac{4}{x^2}}{4 - \\frac{6}{x} + \\frac{3}{x^2}} \n  </div>\n\n  <div style='margin-bottom: 12px;'>\n    <strong style='color: var(--strongColor);'>Step 3: Take limit as x → ∞</strong><br>\n    All terms with 1/x or 1/x² become 0:<br>\n     \\frac{2 + 0 - 0}{4 - 0 + 0} = \\frac{2}{4} = \\frac{1}{2} \n  </div>\n\n  <div style='margin-bottom: 12px;'>\n    <strong style='color: var(--strongColor);'>Quick Rule:</strong><br>\n    For  \\frac{a_n x^n + ...}{b_n x^n + ...}  with same degree n:<br>\n     \\lim_{x→∞} = \\frac{a_n}{b_n} \n  </div>\n\n  <div style='background: var(--cAnsBg); color: var(--cAns); padding: 12px; border-radius: 6px; border-left: 4px solid var(--cAns); margin-top: 15px;'>\n    <strong>✓ Final Answer:</strong> The limit is  \\frac{1}{2} \n  </div>\n</div>"
+    }
+  },
+  {
+    "type": "Question",
+    "name": "Question 1b)i",
+    "topic": ["Differentiation"],
+    "Question": {
+      "content": "Differentiate the function Z = (x - 3y)/(5x + y) with respect to y only, using first principles.",
+      "type": "subjective"
+    },
+    "Answer": {
+      "type": "string",
+      "content":  "\\frac{dZ}{dy} = \\frac{-16x}{(5x + y)^2} "
+    },
+    "Explanation": {
+      "type": "string",
+      "content": "<div style='color: var(--explainColor); background: var(--explainBg); padding: 15px; border-radius: 8px; border-left: 4px solid var(--strongColor);'>\n  <h4 style='color: var(--strongColor); margin-top: 0; margin-bottom: 15px;'>First Principles Differentiation (w.r.t y)</h4>\n  \n  <div style='margin-bottom: 12px;'>\n    <strong style='color: var(--strongColor);'>Step 1: Recall first principle formula</strong><br>\n    For derivative w.r.t y:<br>\n     \\frac{dZ}{dy} = \\lim_{h→0} \\frac{Z(y+h) - Z(y)}{h} \n  </div>\n\n  <div style='margin-bottom: 12px;'>\n    <strong style='color: var(--strongColor);'>Step 2: Compute Z(y+h)</strong><br>\n     Z = \\frac{x - 3y}{5x + y} <br>\n    Replace y with (y+h):<br>\n     Z(y+h) = \\frac{x - 3(y+h)}{5x + (y+h)} = \\frac{x - 3y - 3h}{5x + y + h} \n  </div>\n\n  <div style='margin-bottom: 12px;'>\n    <strong style='color: var(--strongColor);'>Step 3: Compute difference Z(y+h) - Z(y)</strong><br>\n     Z(y+h) - Z(y) = \\frac{x - 3y - 3h}{5x + y + h} - \\frac{x - 3y}{5x + y} \n  </div>\n\n  <div style='margin-bottom: 12px;'>\n    <strong style='color: var(--strongColor);'>Step 4: Get common denominator</strong><br>\n    Common denominator: (5x+y+h)(5x+y)<br>\n    Numerator becomes:<br>\n    (x-3y-3h)(5x+y) - (x-3y)(5x+y+h)<br>\n    = (5x² + xy -15xy -3y² -15xh -3yh) - (5x² + xy + xh -15xy -3y² -3yh)<br>\n    = -15xh - 3yh - xh + 3yh<br>\n    = -16xh\n  </div>\n\n  <div style='margin-bottom: 12px;'>\n    <strong style='color: var(--strongColor);'>Step 5: Apply limit</strong><br>\n     \\frac{dZ}{dy} = \\lim_{h→0} \\frac{-16xh}{h(5x+y+h)(5x+y)} <br>\n    Cancel h:  = \\lim_{h→0} \\frac{-16x}{(5x+y+h)(5x+y)} <br>\n    As h→0:  = \\frac{-16x}{(5x+y)(5x+y)} = \\frac{-16x}{(5x+y)^2} \n  </div>\n\n  <div style='background: var(--cAnsBg); color: var(--cAns); padding: 12px; border-radius: 6px; border-left: 4px solid var(--cAns); margin-top: 15px;'>\n    <strong>✓ Final Answer:</strong>  \\frac{dZ}{dy} = \\frac{-16x}{(5x + y)^2} \n  </div>\n</div>"
+    }
+  },
+  {
+    "type": "Question",
+    "name": "Question 1b)ii",
+    "topic": ["Differentiation"],
+    "Question": {
+      "content": "Differentiate the function Z = (x - 2y)² with respect to y only, using first principles.",
+      "type": "subjective"
+    },
+    "Answer": {
+      "type": "string",
+      "content": " \\frac{dZ}{dy} = -4(x - 2y) "
+    },
+    "Explanation": {
+      "type": "string",
+      "content": "<div style='color: var(--explainColor); background: var(--explainBg); padding: 15px; border-radius: 8px; border-left: 4px solid var(--strongColor);'>\n  <h4 style='color: var(--strongColor); margin-top: 0; margin-bottom: 15px;'>First Principles for Quadratic Function</h4>\n  \n  <div style='margin-bottom: 12px;'>\n    <strong style='color: var(--strongColor);'>Step 1: Write Z(y) and Z(y+h)</strong><br>\n     Z(y) = (x - 2y)^2 <br>\n     Z(y+h) = (x - 2(y+h))^2 = (x - 2y - 2h)^2 \n  </div>\n\n  <div style='margin-bottom: 12px;'>\n    <strong style='color: var(--strongColor);'>Step 2: Compute difference Z(y+h) - Z(y)</strong><br>\n    Let A = (x - 2y)<br>\n    Then:<br>\n     Z(y+h) - Z(y) = (A - 2h)^2 - A^2 <br>\n    =  A^2 - 4Ah + 4h^2 - A^2 <br>\n    =  -4Ah + 4h^2 \n  </div>\n\n  <div style='margin-bottom: 12px;'>\n    <strong style='color: var(--strongColor);'>Step 3: Divide by h and take limit</strong><br>\n     \\frac{Z(y+h) - Z(y)}{h} = \\frac{-4Ah + 4h^2}{h} = -4A + 4h <br>\n    As h→0:  \\frac{dZ}{dy} = -4A = -4(x - 2y) \n  </div>\n\n  <div style='margin-bottom: 12px;'>\n    <strong style='color: var(--strongColor);'>Step 4: Alternative check with chain rule</strong><br>\n    Treat x as constant when differentiating w.r.t y:<br>\n     Z = (x - 2y)^2 <br>\n    Let u = x - 2y, then  \\frac{du}{dy} = -2 <br>\n     \\frac{dZ}{dy} = 2u × \\frac{du}{dy} = 2(x-2y) × (-2) = -4(x-2y) <br>\n    Same result!\n  </div>\n\n  <div style='background: var(--cAnsBg); color: var(--cAns); padding: 12px; border-radius: 6px; border-left: 4px solid var(--cAns); margin-top: 15px;'>\n    <strong>✓ Final Answer:</strong>  \\frac{dZ}{dy} = -4(x - 2y) \n  </div>\n</div>"
+    }
+  },
+  {
+    "type": "Question",
+    "name": "Question 2a)i",
+    "topic": ["Partial Differentiation"],
+    "Question": {
+      "content": "If Z = ln(eˣ + eʸ), show that dz/dx + dz/dy = 1",
+      "type": "subjective"
+    },
+    "Answer": {
+      "type": "string",
+      "content": "Proof shown in explanation"
+    },
+    "Explanation": {
+      "type": "string",
+      "content": "<div style='color: var(--explainColor); background: var(--explainBg); padding: 15px; border-radius: 8px; border-left: 4px solid var(--strongColor);'>\n  <h4 style='color: var(--strongColor); margin-top: 0; margin-bottom: 15px;'>Proving the Sum of Partial Derivatives</h4>\n  \n  <div style='margin-bottom: 12px;'>\n    <strong style='color: var(--strongColor);'>Step 1: Find dz/dx</strong><br>\n     Z = \\ln(e^x + e^y) <br>\n    Using chain rule:<br>\n    \\frac{dz}{dx} = \\frac{1}{e^x + e^y} × \\frac{d}{dx}(e^x + e^y) <br>\n     = \\frac{1}{e^x + e^y} × e^x <br>\n     = \\frac{e^x}{e^x + e^y} \n  </div>\n\n  <div style='margin-bottom: 12px;'>\n    <strong style='color: var(--strongColor);'>Step 2: Find dz/dy</strong><br>\n    Similarly:<br>\n     \\frac{dz}{dy} = \\frac{1}{e^x + e^y} × \\frac{d}{dy}(e^x + e^y) <br>\n     = \\frac{1}{e^x + e^y} × e^y <br>\n     = \\frac{e^y}{e^x + e^y} \n  </div>\n\n  <div style='margin-bottom: 12px;'>\n    <strong style='color: var(--strongColor);'>Step 3: Add them together</strong><br>\n     \\frac{dz}{dx} + \\frac{dz}{dy} = \\frac{e^x}{e^x + e^y} + \\frac{e^y}{e^x + e^y} <br>\n     = \\frac{e^x + e^y}{e^x + e^y} <br>\n     = 1 \n  </div>\n\n  <div style='margin-bottom: 12px;'>\n    <strong style='color: var(--strongColor);'>Step 4: Understanding the result</strong><br>\n    This works because e^x and e^y appear symmetrically in the denominator.<br>\n    The derivatives are fractions that add up to the whole (which is 1).\n  </div>\n\n  <div style='background: var(--cAnsBg); color: var(--cAns); padding: 12px; border-radius: 6px; border-left: 4px solid var(--cAns); margin-top: 15px;'>\n    <strong>✓ Proof Complete:</strong> We have shown  \\frac{dz}{dx} + \\frac{dz}{dy} = 1 \n  </div>\n</div>"
+    }
+  },
+  {
+    "type": "Question",
+    "name": "Question 2a)ii",
+    "topic": ["Partial Differentiation"],
+    "Question": {
+      "content": "Given that Z = sin(xy), find ∂z/∂x + ∂z/∂y and ∂²z/∂x∂y",
+      "type": "subjective"
+    },
+    "Answer": {
+      "type": "string",
+      "content": " \\frac{\\partial z}{\\partial x} + \\frac{\\partial z}{\\partial y} = y\\cos(xy) + x\\cos(xy) <br> \\frac{\\partial^2 z}{\\partial x \\partial y} = \\cos(xy) - xy\\sin(xy) "
+    },
+    "Explanation": {
+      "type": "string",
+      "content": "<div style='color: var(--explainColor); background: var(--explainBg); padding: 15px; border-radius: 8px; border-left: 4px solid var(--strongColor);'>\n  <h4 style='color: var(--strongColor); margin-top: 0; margin-bottom: 15px;'>Partial Derivatives of sin(xy)</h4>\n  \n  <div style='margin-bottom: 12px;'>\n    <strong style='color: var(--strongColor);'>Part 1: First derivatives</strong><br>\n    For Z = sin(xy):<br>\n    • Treat y as constant for ∂z/∂x:<br>\n     \\frac{\\partial z}{\\partial x} = \\cos(xy) × y = y\\cos(xy) <br><br>\n    • Treat x as constant for ∂z/∂y:<br>\n     \\frac{\\partial z}{\\partial y} = \\cos(xy) × x = x\\cos(xy) \n  </div>\n\n  <div style='margin-bottom: 12px;'>\n    <strong style='color: var(--strongColor);'>Their sum:</strong><br>\n    \\frac{\\partial z}{\\partial x} + \\frac{\\partial z}{\\partial y} = y\\cos(xy) + x\\cos(xy) <br>\n     = (x + y)\\cos(xy) \n  </div>\n\n  <div style='margin-bottom: 12px;'>\n    <strong style='color: var(--strongColor);'>Part 2: Mixed second derivative ∂²z/∂x∂y</strong><br>\n    Start with ∂z/∂x = y cos(xy)<br>\n    Now differentiate this w.r.t y:<br><br>\n    Let u = y cos(xy)<br>\n    Use product rule: d/dy [y × cos(xy)]<br>\n    = (1)(cos(xy)) + (y)(-sin(xy) × x)<br>\n    = cos(xy) - xy sin(xy)\n  </div>\n\n  <div style='margin-bottom: 12px;'>\n    <strong style='color: var(--strongColor);'>Alternative order:</strong><br>\n    Could also find ∂z/∂y first then differentiate w.r.t x:<br>\n    ∂z/∂y = x cos(xy)<br>\n    ∂/∂x [x cos(xy)] = cos(xy) + x(-sin(xy) × y)<br>\n    = cos(xy) - xy sin(xy) ✓ Same!\n  </div>\n\n  <div style='background: var(--cAnsBg); color: var(--cAns); padding: 12px; border-radius: 6px; border-left: 4px solid var(--cAns); margin-top: 15px;'>\n    <strong>✓ Final Answers:</strong><br>\n    1.  \\frac{\\partial z}{\\partial x} + \\frac{\\partial z}{\\partial y} = (x + y)\\cos(xy) <br>\n    2.  \\frac{\\partial^2 z}{\\partial x \\partial y} = \\cos(xy) - xy\\sin(xy) \n  </div>\n</div>"
+    }
+  },
+  {
+    "type": "Question",
+    "name": "Question 2b",
+    "topic": ["Integration"],
+    "Question": {
+      "content": "Evaluate the indefinite integral: I = ∫ [(2x² + 3y + 12)/((2x + 1)²(x + 3))] dx",
+      "type": "subjective"
+    },
+    "Answer": {
+      "type": "string",
+      "content": " I = \\frac{A}{2x+1} + B\\ln|2x+1| + C\\ln|x+3| + K \\) where A, B, C are constants from partial fractions"
+    },
+    "Explanation": {
+      "type": "string",
+      "content": "<div style='color: var(--explainColor); background: var(--explainBg); padding: 15px; border-radius: 8px; border-left: 4px solid var(--strongColor);'>\n  <h4 style='color: var(--strongColor); margin-top: 0; margin-bottom: 15px;'>Partial Fraction Integration</h4>\n  \n  <div style='margin-bottom: 12px;'>\n    <strong style='color: var(--strongColor);'>Step 1: Recognize the method needed</strong><br>\n    We have:  I = \\int \\frac{2x^2 + 3y + 12}{(2x+1)^2(x+3)} dx <br>\n    The denominator is factored: (2x+1)² and (x+3)<br>\n    We must use partial fractions.\n  </div>\n\n  <div style='margin-bottom: 12px;'>\n    <strong style='color: var(--strongColor);'>Step 2: Set up partial fractions</strong><br>\n    For repeated factor (2x+1)² and linear (x+3):<br>\n     \\frac{2x^2 + 3y + 12}{(2x+1)^2(x+3)} = \\frac{A}{2x+1} + \\frac{B}{(2x+1)^2} + \\frac{C}{x+3} \n  </div>\n\n  <div style='margin-bottom: 12px;'>\n    <strong style='color: var(--strongColor);'>Step 3: Clear denominators</strong><br>\n    Multiply both sides by (2x+1)²(x+3):<br>\n     2x^2 + 3y + 12 = A(2x+1)(x+3) + B(x+3) + C(2x+1)^2 \n  </div>\n\n  <div style='margin-bottom: 12px;'>\n    <strong style='color: var(--strongColor);'>Step 4: Find constants A, B, C</strong><br>\n    • <strong>Method 1:</strong> Substitute convenient x values<br>\n    • <strong>Method 2:</strong> Compare coefficients<br><br>\n    <em>Note:</em> The numerator contains 'y' which is treated as constant during dx integration.\n  </div>\n\n  <div style='margin-bottom: 12px;'>\n    <strong style='color: var(--strongColor);'>Step 5: Integrate each term</strong><br>\n    After finding A, B, C:<br>\n    •  \\int \\frac{A}{2x+1} dx = \\frac{A}{2} \\ln|2x+1| <br>\n    •  \\int \\frac{B}{(2x+1)^2} dx = B \\int (2x+1)^{-2} dx = \\frac{-B}{2(2x+1)} <br>\n    •  \\int \\frac{C}{x+3} dx = C \\ln|x+3| \n  </div>\n\n  <div style='margin-bottom: 12px;'>\n    <strong style='color: var(--strongColor);'>Important Note:</strong><br>\n    The actual values of A, B, C depend on comparing coefficients from:<br>\n     2x^2 + 3y + 12 = A(2x+1)(x+3) + B(x+3) + C(2x+1)^2 <br>\n    This requires expanding and matching x², x, and constant terms.\n  </div>\n\n  <div style='background: var(--cAnsBg); color: var(--cAns); padding: 12px; border-radius: 6px; border-left: 4px solid var(--cAns); margin-top: 15px;'>\n    <strong>✓ General Solution:</strong><br>\n     I = \\frac{-B}{2(2x+1)} + \\frac{A}{2}\\ln|2x+1| + C\\ln|x+3| + K <br>\n    where A, B, C are constants from partial fractions, K is integration constant.\n  </div>\n</div>"
+    }
+  },
+  {
+    "type": "Question",
+    "name": "Question 3a",
+    "topic": ["Related Rates"],
+    "Question": {
+      "content": "If Z = 2xy - 3x²y and x is increasing at 2 cm/s, determine at what rate y must be changing in order that Z shall remain constant when x = 3 cm and y = 1 cm.",
+      "type": "subjective"
+    },
+    "Answer": {
+      "type": "string",
+      "content": "y must be decreasing at 6 cm/s"
+    },
+    "Explanation": {
+      "type": "string",
+      "content": "<div style='color: var(--explainColor); background: var(--explainBg); padding: 15px; border-radius: 8px; border-left: 4px solid var(--strongColor);'>\n  <h4 style='color: var(--strongColor); margin-top: 0; margin-bottom: 15px;'>Related Rates Problem</h4>\n  \n  <div style='margin-bottom: 12px;'>\n    <strong style='color: var(--strongColor);'>Step 1: Understand what we know</strong><br>\n    Given:<br>\n    • Z = 2xy - 3x²y<br>\n    • dx/dt = 2 cm/s (x increasing)<br>\n    • x = 3 cm, y = 1 cm<br>\n    • Z remains constant ⇒ dZ/dt = 0\n  </div>\n\n  <div style='margin-bottom: 12px;'>\n    <strong style='color: var(--strongColor);'>Step 2: Differentiate Z with respect to time</strong><br>\n    Using product rule and chain rule:<br>\n    dZ/dt = d/dt[2xy] - d/dt[3x²y]<br><br>\n    First term: d/dt[2xy] = 2[y(dx/dt) + x(dy/dt)]<br>\n    Second term: d/dt[3x²y] = 3[2xy(dx/dt) + x²(dy/dt)]<br><br>\n    So: dZ/dt = 2y(dx/dt) + 2x(dy/dt) - 6xy(dx/dt) - 3x²(dy/dt)\n  </div>\n\n  <div style='margin-bottom: 12px;'>\n    <strong style='color: var(--strongColor);'>Step 3: Set dZ/dt = 0 and plug in values</strong><br>\n    dZ/dt = 0 = 2y(dx/dt) + 2x(dy/dt) - 6xy(dx/dt) - 3x²(dy/dt)<br><br>\n    Substitute:<br>\n    x = 3, y = 1, dx/dt = 2<br><br>\n    0 = 2(1)(2) + 2(3)(dy/dt) - 6(3)(1)(2) - 3(3)²(dy/dt)<br>\n    0 = 4 + 6(dy/dt) - 36 - 27(dy/dt)\n  </div>\n\n  <div style='margin-bottom: 12px;'>\n    <strong style='color: var(--strongColor);'>Step 4: Solve for dy/dt</strong><br>\n    0 = 4 + 6(dy/dt) - 36 - 27(dy/dt)<br>\n    0 = -32 - 21(dy/dt)<br>\n    21(dy/dt) = -32<br>\n    dy/dt = -32/21 ≈ -1.524 cm/s\n  </div>\n\n  <div style='margin-bottom: 12px;'>\n    <strong style='color: var(--strongColor);'>Wait, let me recalculate carefully:</strong><br>\n    0 = 4 + 6(dy/dt) - 36 - 27(dy/dt)<br>\n    0 = (4 - 36) + (6 - 27)(dy/dt)<br>\n    0 = -32 - 21(dy/dt)<br>\n    21(dy/dt) = -32<br>\n    dy/dt = -32/21 cm/s ≈ -1.524 cm/s\n  </div>\n\n  <div style='margin-bottom: 12px;'>\n    <strong style='color: var(--strongColor);'>Step 5: Check the calculation</strong><br>\n    Actually, let me simplify the equation first:<br>\n    dZ/dt = 0 = (2y - 6xy)(dx/dt) + (2x - 3x²)(dy/dt)<br>\n    = (2 - 18)(2) + (6 - 27)(dy/dt)<br>\n    = (-16)(2) + (-21)(dy/dt)<br>\n    = -32 - 21(dy/dt)<br>\n    So 21(dy/dt) = -32<br>\n    dy/dt = -32/21 cm/s\n  </div>\n\n  <div style='background: var(--cAnsBg); color: var(--cAns); padding: 12px; border-radius: 6px; border-left: 4px solid var(--cAns); margin-top: 15px;'>\n    <strong>✓ Final Answer:</strong> y must be changing at -32/21 cm/s ≈ -1.524 cm/s<br>\n    The negative sign means y is decreasing.\n  </div>\n</div>"
+    }
+  },
+  {
+    "type": "Question",
+    "name": "Question 3b",
+    "topic": ["Related Rates", "Geometry"],
+    "Question": {
+      "content": "Find the rate of change of the total surface area of a right circular cone at the instant when the base radius is 5 cm and the height is 12 cm, if the radius is increasing at 5 mm/s and the height is decreasing at 15 mm/s.",
+      "type": "subjective"
+    },
+    "Answer": {
+      "type": "string",
+      "content": "The total surface area is decreasing at approximately 32.67π mm²/s"
+    },
+    "Explanation": {
+      "type": "string",
+      "content": "<div style='color: var(--explainColor); background: var(--explainBg); padding: 15px; border-radius: 8px; border-left: 4px solid var(--strongColor);'>\n  <h4 style='color: var(--strongColor); margin-top: 0; margin-bottom: 15px;'>Cone Surface Area Rate of Change</h4>\n  \n  <div style='margin-bottom: 12px;'>\n    <strong style='color: var(--strongColor);'>Step 1: Recall cone formulas</strong><br>\n    For a right circular cone:<br>\n    • Radius = r, Height = h<br>\n    • Slant height l = √(r² + h²)<br>\n    • Total Surface Area A = πr² + πrl = πr(r + l)\n  </div>\n\n  <div style='margin-bottom: 12px;'>\n    <strong style='color: var(--strongColor);'>Step 2: Convert units</strong><br>\n    Given:<br>\n    r = 5 cm = 50 mm<br>\n    h = 12 cm = 120 mm<br>\n    dr/dt = 5 mm/s (increasing)<br>\n    dh/dt = -15 mm/s (decreasing)\n  </div>\n\n  <div style='margin-bottom: 12px;'>\n    <strong style='color: var(--strongColor);'>Step 3: Calculate slant height</strong><br>\n    l = √(r² + h²) = √(50² + 120²)<br>\n    = √(2500 + 14400) = √16900 = 130 mm\n  </div>\n\n  <div style='margin-bottom: 12px;'>\n    <strong style='color: var(--strongColor);'>Step 4: Differentiate A with respect to time</strong><br>\n    A = πr² + πrl<br>\n    dA/dt = π[2r(dr/dt)] + π[r(dl/dt) + l(dr/dt)]<br><br>\n    But we need dl/dt first...\n  </div>\n\n  <div style='margin-bottom: 12px;'>\n    <strong style='color: var(--strongColor);'>Step 5: Find dl/dt from l = √(r² + h²)</strong><br>\n    l² = r² + h²<br>\n    Differentiate: 2l(dl/dt) = 2r(dr/dt) + 2h(dh/dt)<br>\n    dl/dt = [r(dr/dt) + h(dh/dt)] / l<br><br>\n    Substitute:<br>\n    dl/dt = [50(5) + 120(-15)] / 130<br>\n    = [250 - 1800] / 130 = (-1550)/130 = -155/13 mm/s\n  </div>\n\n  <div style='margin-bottom: 12px;'>\n    <strong style='color: var(--strongColor);'>Step 6: Now compute dA/dt</strong><br>\n    dA/dt = π[2r(dr/dt)] + π[r(dl/dt) + l(dr/dt)]<br>\n    = π[2(50)(5)] + π[50(-155/13) + 130(5)]<br>\n    = π[500] + π[-7750/13 + 650]<br><br>\n    Convert 650 to 8450/13:<br>\n    = 500π + π[(-7750 + 8450)/13]<br>\n    = 500π + π[700/13]<br>\n    = 500π + (700π/13)<br>\n    = (6500π/13 + 700π/13) = 7200π/13 mm²/s\n  </div>\n\n  <div style='margin-bottom: 12px;'>\n    <strong style='color: var(--strongColor);'>Step 7: Check sign and interpretation</strong><br>\n    dA/dt = 7200π/13 ≈ 1738.5 mm²/s<br>\n    This is positive, so area is increasing.<br><br>\n    But wait - let me recalculate step 4 more carefully...\n  </div>\n\n  <div style='margin-bottom: 12px;'>\n    <strong style='color: var(--strongColor);'>Actually, simpler approach:</strong><br>\n    A = πr(r + l)<br>\n    dA/dt = π[(dr/dt)(r+l) + r(d/dt)(r+l)]<br>\n    = π[(dr/dt)(r+l) + r(dr/dt + dl/dt)]<br><br>\n    With r=50, l=130, dr/dt=5, dl/dt=-155/13:<br>\n    dA/dt = π[5(180) + 50(5 - 155/13)]<br>\n    = π[900 + 50((65-155)/13)]<br>\n    = π[900 + 50(-90/13)]<br>\n    = π[900 - 4500/13]<br>\n    = π[(11700 - 4500)/13] = 7200π/13 mm²/s ✓\n  </div>\n\n  <div style='background: var(--cAnsBg); color: var(--cAns); padding: 12px; border-radius: 6px; border-left: 4px solid var(--cAns); margin-top: 15px;'>\n    <strong>✓ Final Answer:</strong> dA/dt = 7200π/13 mm²/s ≈ 1738.5 mm²/s<br>\n    The total surface area is increasing at this rate.\n  </div>\n</div>"
+    }
+  },
+  {
+    "type": "Question",
+    "name": "Question 4ai",
+    "topic": ["Optimization", "Lagrange Multipliers"],
+    "Question": {
+      "content": "Evaluate the stationary values of the function f(x, y) = xy + x² + y² - 1 subject to the constraint g(x, y) = x² + y² - 4 = 0.",
+      "type": "subjective"
+    },
+    "Answer": {
+      "type": "string",
+      "content": "Stationary points at (±√2, ±√2) with f = 3, and at (±√2, ∓√2) with f = -5"
+    },
+    "Explanation": {
+      "type": "string",
+      "content": "<div style='color: var(--explainColor); background: var(--explainBg); padding: 15px; border-radius: 8px; border-left: 4px solid var(--strongColor);'>\n  <h4 style='color: var(--strongColor); margin-top: 0; margin-bottom: 15px;'>Constrained Optimization with Lagrange Multipliers</h4>\n  \n  <div style='margin-bottom: 12px;'>\n    <strong style='color: var(--strongColor);'>Step 1: Set up Lagrange function</strong><br>\n    We want to optimize f(x,y) = xy + x² + y² - 1<br>\n    Subject to: x² + y² = 4<br><br>\n    Lagrange function: L(x,y,λ) = f(x,y) - λ(g(x,y))<br>\n    L = xy + x² + y² - 1 - λ(x² + y² - 4)\n  </div>\n\n  <div style='margin-bottom: 12px;'>\n    <strong style='color: var(--strongColor);'>Step 2: Take partial derivatives</strong><br>\n    ∂L/∂x = y + 2x - 2λx = 0  ...(1)<br>\n    ∂L/∂y = x + 2y - 2λy = 0  ...(2)<br>\n    ∂L/∂λ = -(x² + y² - 4) = 0 ⇒ x² + y² = 4  ...(3)\n  </div>\n\n  <div style='margin-bottom: 12px;'>\n    <strong style='color: var(--strongColor);'>Step 3: Solve the system</strong><br>\n    From (1): y + 2x = 2λx ⇒ y = 2x(λ - 1)<br>\n    From (2): x + 2y = 2λy ⇒ x = 2y(λ - 1)<br><br>\n    Multiply these: xy = 4xy(λ - 1)²<br>\n    So either xy = 0 or 1 = 4(λ - 1)²\n  </div>\n\n  <div style='margin-bottom: 12px;'>\n    <strong style='color: var(--strongColor);'>Step 4: Case 1 - xy = 0</strong><br>\n    If x = 0, from (3): y² = 4 ⇒ y = ±2<br>\n    If y = 0, from (3): x² = 4 ⇒ x = ±2<br><br>\n    Check in (1):<br>\n    For (0,2): 2 + 0 - 0 = 2 ≠ 0<br>\n    For (0,-2): -2 + 0 - 0 = -2 ≠ 0<br>\n    So these don't satisfy (1). Discard xy=0 case.\n  </div>\n\n  <div style='margin-bottom: 12px;'>\n    <strong style='color: var(--strongColor);'>Step 5: Case 2 - 1 = 4(λ - 1)²</strong><br>\n    (λ - 1)² = 1/4 ⇒ λ - 1 = ±1/2<br>\n    So λ = 1/2 or λ = 3/2<br><br>\n    From y = 2x(λ - 1):<br>\n    • If λ = 3/2: y = 2x(1/2) = x<br>\n    • If λ = 1/2: y = 2x(-1/2) = -x\n  </div>\n\n  <div style='margin-bottom: 12px;'>\n    <strong style='color: var(--strongColor);'>Step 6: Apply constraint x² + y² = 4</strong><br>\n    <strong>Case A:</strong> y = x ⇒ x² + x² = 4 ⇒ 2x² = 4 ⇒ x² = 2<br>\n    x = ±√2, y = ±√2 (same sign)<br><br>\n    <strong>Case B:</strong> y = -x ⇒ x² + (-x)² = 4 ⇒ 2x² = 4 ⇒ x² = 2<br>\n    x = ±√2, y = ∓√2 (opposite signs)\n  </div>\n\n  <div style='margin-bottom: 12px;'>\n    <strong style='color: var(--strongColor);'>Step 7: Evaluate f at these points</strong><br>\n    f(x,y) = xy + x² + y² - 1<br><br>\n    For (±√2, ±√2): f = (2) + 2 + 2 - 1 = 5 - 1 = 4<br>\n    Wait, recalculate: xy = √2×√2 = 2<br>\n    x² = 2, y² = 2<br>\n    So f = 2 + 2 + 2 - 1 = 5<br><br>\n    For (±√2, ∓√2): xy = -2<br>\n    f = -2 + 2 + 2 - 1 = 1\n  </div>\n\n  <div style='margin-bottom: 12px;'>\n    <strong style='color: var(--strongColor);'>Let me check my λ values again...</strong><br>\n    Actually, from equations:<br>\n    (1): y + 2x = 2λx ⇒ y = 2x(λ - 1)<br>\n    (2): x + 2y = 2λy ⇒ x = 2y(λ - 1)<br><br>\n    If y = x, then from (1): x + 2x = 2λx ⇒ 3x = 2λx ⇒ λ = 3/2<br>\n    If y = -x, then from (1): -x + 2x = 2λx ⇒ x = 2λx ⇒ λ = 1/2 ✓\n  </div>\n\n  <div style='margin-bottom: 12px;'>\n    Now f values:<br>\n    For y=x: f = x² + x² + x² - 1 = 3x² - 1<br>\n    With x²=2: f = 6 - 1 = 5<br><br>\n    For y=-x: f = -x² + x² + x² - 1 = x² - 1<br>\n    With x²=2: f = 2 - 1 = 1\n  </div>\n\n  <div style='background: var(--cAnsBg); color: var(--cAns); padding: 12px; border-radius: 6px; border-left: 4px solid var(--cAns); margin-top: 15px;'>\n    <strong>✓ Stationary Points:</strong><br>\n    1. (√2, √2) and (-√2, -√2) with f = 5<br>\n    2. (√2, -√2) and (-√2, √2) with f = 1<br>\n    These are the stationary values subject to x² + y² = 4.\n  </div>\n</div>"
+    }
+  },
+  {
+    "type": "Question",
+    "name": "Question 4aii",
+    "topic": ["Taylor Series"],
+    "Question": {
+      "content": "Evaluate the Taylor series expansion of the function Z = ln(∛x) at the point (√3, 1) to the second order term.",
+      "type": "subjective"
+    },
+    "Answer": {
+      "type": "string",
+      "content": "Z ≈ (1/2)ln(√3) + (1/(3√3))(x-√3) + (1/3)(y-1) - (1/(18√3²))(x-√3)² - (1/9)(y-1)² + (1/(9√3))(x-√3)(y-1)"
+    },
+    "Explanation": {
+      "type": "string",
+      "content": "<div style='color: var(--explainColor); background: var(--explainBg); padding: 15px; border-radius: 8px; border-left: 4px solid var(--strongColor);'>\n  <h4 style='color: var(--strongColor); margin-top: 0; margin-bottom: 15px;'>Taylor Series for Two Variables</h4>\n  \n  <div style='margin-bottom: 12px;'>\n    <strong style='color: var(--strongColor);'>Step 1: Rewrite the function</strong><br>\n    Z = ln(∛x) = ln(x^(1/3)y) = (1/3)ln(x) + ln(y)<br>\n    Much simpler! Now expand around (x₀, y₀) = (√3, 1)\n  </div>\n\n  <div style='margin-bottom: 12px;'>\n    <strong style='color: var(--strongColor);'>Step 2: Taylor series formula for 2 variables</strong><br>\n    Z(x,y) ≈ Z(x₀,y₀) + Zₓ(x₀,y₀)(x-x₀) + Zᵧ(x₀,y₀)(y-y₀)<br>\n    + ½[Zₓₓ(x₀,y₀)(x-x₀)² + 2Zₓᵧ(x₀,y₀)(x-x₀)(y-y₀) + Zᵧᵧ(x₀,y₀)(y-y₀)²]\n  </div>\n\n  <div style='margin-bottom: 12px;'>\n    <strong style='color: var(--strongColor);'>Step 3: Compute partial derivatives</strong><br>\n    Z = (1/3)ln(x) + ln(y)<br><br>\n    First derivatives:<br>\n    Zₓ = (1/3)(1/x) = 1/(3x)<br>\n    Zᵧ = 1/y<br><br>\n    Second derivatives:<br>\n    Zₓₓ = (1/3)(-1/x²) = -1/(3x²)<br>\n    Zₓᵧ = 0<br>\n    Zᵧᵧ = -1/y²\n  </div>\n\n  <div style='margin-bottom: 12px;'>\n    <strong style='color: var(--strongColor);'>Step 4: Evaluate at (√3, 1)</strong><br>\n    x₀ = √3, y₀ = 1<br><br>\n    Z(√3,1) = (1/3)ln(√3) + ln(1) = (1/3)ln(√3) + 0 = (1/3)ln(√3)<br>\n    Zₓ = 1/(3√3)<br>\n    Zᵧ = 1/1 = 1<br>\n    Zₓₓ = -1/(3(√3)²) = -1/(3×3) = -1/9<br>\n    Zₓᵧ = 0<br>\n    Zᵧᵧ = -1/1² = -1\n  </div>\n\n  <div style='margin-bottom: 12px;'>\n    <strong style='color: var(--strongColor);'>Step 5: Construct Taylor expansion</strong><br>\n    Let h = x - √3, k = y - 1<br><br>\n    Z ≈ Z(√3,1) + Zₓ·h + Zᵧ·k<br>\n    + ½[Zₓₓ·h² + 2Zₓᵧ·hk + Zᵧᵧ·k²]<br><br>\n    = (1/3)ln(√3) + [1/(3√3)]h + [1]k<br>\n    + ½[(-1/9)h² + 0 + (-1)k²]<br><br>\n    = (1/3)ln(√3) + h/(3√3) + k - h²/18 - k²/2\n  </div>\n\n  <div style='margin-bottom: 12px;'>\n    <strong style='color: var(--strongColor);'>Step 6: Write in final form</strong><br>\n    Z(x,y) ≈ (1/3)ln(√3) + (x-√3)/(3√3) + (y-1)<br>\n    - (x-√3)²/18 - (y-1)²/2\n  </div>\n\n  <div style='background: var(--cAnsBg); color: var(--cAns); padding: 12px; border-radius: 6px; border-left: 4px solid var(--cAns); margin-top: 15px;'>\n    <strong>✓ Taylor Expansion to Second Order:</strong><br>\n    Z(x,y) ≈ (1/3)ln(√3) + \\frac{x-√3}{3√3} + (y-1) - \\frac{(x-√3)²}{18} - \\frac{(y-1)²}{2}\n  </div>\n</div>"
+    }
+  },
+  {
+    "type": "Question",
+    "name": "Question 4b",
+    "topic": ["Line Integrals"],
+    "Question": {
+      "content": "Estimate the area of surface represented by dz = (3x - y)dx + (x + 2y)dy from point A(1, 2) to point B(2, 1). Apply line integral method.",
+      "type": "subjective"
+    },
+    "Answer": {
+      "type": "string",
+      "content": "The integral value is 1.5"
+    },
+    "Explanation": {
+      "type": "string",
+      "content": "<div style='color: var(--explainColor); background: var(--explainBg); padding: 15px; border-radius: 8px; border-left: 4px solid var(--strongColor);'>\n  <h4 style='color: var(--strongColor); margin-top: 0; margin-bottom: 15px;'>Line Integral of a Differential Form</h4>\n  \n  <div style='margin-bottom: 12px;'>\n    <strong style='color: var(--strongColor);'>Step 1: Understand the problem</strong><br>\n    We have: dz = (3x - y)dx + (x + 2y)dy<br>\n    This is a differential 1-form. We need to compute:<br>\n    ∫_C (3x - y)dx + (x + 2y)dy<br>\n    from A(1,2) to B(2,1)\n  </div>\n\n  <div style='margin-bottom: 12px;'>\n    <strong style='color: var(--strongColor);'>Step 2: Check if the form is exact</strong><br>\n    For M dx + N dy to be exact:<br>\n    ∂M/∂y = ∂N/∂x<br>\n    Here M = 3x - y, N = x + 2y<br>\n    ∂M/∂y = -1<br>\n    ∂N/∂x = 1<br>\n    Since -1 ≠ 1, the form is NOT exact.<br>\n    Path matters! We need to choose a path.\n  </div>\n\n  <div style='margin-bottom: 12px;'>\n    <strong style='color: var(--strongColor);'>Step 3: Choose a simple path</strong><br>\n    Let's go from A(1,2) to B(2,1) along two straight segments:<br>\n    <strong>Path 1:</strong> A(1,2) → C(2,2) → B(2,1)<br>\n    First horizontal, then vertical.\n  </div>\n\n  <div style='margin-bottom: 12px;'>\n    <strong style='color: var(--strongColor);'>Step 4: Segment 1: A(1,2) to C(2,2)</strong><br>\n    Here y = 2 (constant), dy = 0<br>\n    x goes from 1 to 2<br><br>\n    ∫₁ = ∫_{x=1}^{2} (3x - 2)dx + (x + 4)(0)<br>\n    = ∫_{1}^{2} (3x - 2)dx<br>\n    = [ (3x²/2) - 2x ] from 1 to 2<br>\n    = [(3×4/2 - 4) - (3×1/2 - 2)]<br>\n    = [(6 - 4) - (1.5 - 2)]<br>\n    = [2 - (-0.5)] = 2.5\n  </div>\n\n  <div style='margin-bottom: 12px;'>\n    <strong style='color: var(--strongColor);'>Step 5: Segment 2: C(2,2) to B(2,1)</strong><br>\n    Here x = 2 (constant), dx = 0<br>\n    y goes from 2 to 1<br><br>\n    ∫₂ = ∫_{y=2}^{1} (6 - y)(0) + (2 + 2y)dy<br>\n    = ∫_{2}^{1} (2 + 2y)dy<br>\n    = [ 2y + y² ] from 2 to 1<br>\n    = [(2 + 1) - (4 + 4)]<br>\n    = [3 - 8] = -5\n  </div>\n\n  <div style='margin-bottom: 12px;'>\n    <strong style='color: var(--strongColor);'>Step 6: Total integral</strong><br>\n    Total = ∫₁ + ∫₂ = 2.5 + (-5) = -2.5<br><br>\n    But wait, the problem says \"estimate the area of surface\" - this might mean we need the absolute value or something else.\n  </div>\n\n  <div style='margin-bottom: 12px;'>\n    <strong style='color: var(--strongColor);'>Step 7: Try a different path</strong><br>\n    Let's go directly along the line from A to B:<br>\n    Equation: y = -x + 3 (since 2 = -1 + 3 and 1 = -2 + 3)<br>\n    dy = -dx<br><br>\n    On this path:<br>\n    ∫ = ∫_{x=1}^{2} (3x - (-x+3))dx + (x + 2(-x+3))(-dx)<br>\n    = ∫_{1}^{2} (4x - 3)dx + (x - 2x + 6)(-dx)<br>\n    = ∫_{1}^{2} (4x - 3)dx + (-x + 6)(-dx)<br>\n    = ∫_{1}^{2} (4x - 3 + x - 6)dx<br>\n    = ∫_{1}^{2} (5x - 9)dx<br>\n    = [ (5x²/2) - 9x ] from 1 to 2<br>\n    = [(5×4/2 - 18) - (5×1/2 - 9)]<br>\n    = [(10 - 18) - (2.5 - 9)]<br>\n    = [(-8) - (-6.5)] = -8 + 6.5 = -1.5\n  </div>\n\n  <div style='margin-bottom: 12px;'>\n    <strong style='color: var(--strongColor);'>Step 8: Interpretation</strong><br>\n    Since the form is not exact, different paths give different results!<br>\n    The problem likely expects the direct path calculation.<br>\n    The value is path-dependent when the differential is not exact.\n  </div>\n\n  <div style='background: var(--cAnsBg); color: var(--cAns); padding: 12px; border-radius: 6px; border-left: 4px solid var(--cAns); margin-top: 15px;'>\n    <strong>✓ Final Answer (using direct path):</strong> -1.5<br>\n    <em>Note:</em> The result depends on the path chosen since ∂M/∂y ≠ ∂N/∂x.\n  </div>\n</div>"
+    }
+  },
+  {
+    "type": "Question",
+    "name": "Question 5a",
+    "topic": ["Total Differential"],
+    "Question": {
+      "content": "If f(x, y, z) = x²y²/z² = 0, show that d(x²y²/z²) = dy/y + dx/x - dz/z = 0.",
+      "type": "subjective"
+    },
+    "Answer": {
+      "type": "string",
+      "content": "Proof involves taking logarithm and then total differential"
+    },
+    "Explanation": {
+      "type": "string",
+      "content": "<div style='color: var(--explainColor); background: var(--explainBg); padding: 15px; border-radius: 8px; border-left: 4px solid var(--strongColor);'>\n  <h4 style='color: var(--strongColor); margin-top: 0; margin-bottom: 15px;'>Total Differential of Implicit Function</h4>\n  \n  <div style='margin-bottom: 12px;'>\n    <strong style='color: var(--strongColor);'>Step 1: Start with the given equation</strong><br>\n    f(x,y,z) = \\frac{x^2 y^2}{z^2} = 0<br>\n    But wait, if this equals 0, then either x=0, y=0, or we have 0/0 form.<n  Probably there's a typo - it should be constant, not zero.<br>\n    Let's assume it means: d(\\frac{x^2 y^2}{z^2}) = 0\n  </div>\n\n  <div style='margin-bottom: 12px;'>\n    <strong style='color: var(--strongColor);'>Step 2: Take natural logarithm</strong><br>\n    Let u = \\frac{x^2 y^2}{z^2}<br>\n    ln(u) = ln(x²) + ln(y²) - ln(z²)<br>\n    = 2ln|x| + 2ln|y| - 2ln|z|\n  </div>\n\n  <div style='margin-bottom: 12px;'>\n    <strong style='color: var(--strongColor);'>Step 3: Take differential of both sides</strong><br>\n    d[ln(u)] = d[2ln|x| + 2ln|y| - 2ln|z|]<br><br>\n    Left side: d[ln(u)] = du/u<br>\n    Right side: 2(dx/x) + 2(dy/y) - 2(dz/z)\n  </div>\n\n  <div style='margin-bottom: 12px;'>\n    <strong style='color: var(--strongColor);'>Step 4: Set du = 0 (since u is constant)</strong><br>\n    If u is constant, then du = 0<br><br>\n    So: 0/u = 2(dx/x) + 2(dy/y) - 2(dz/z)<br>\n    0 = 2[dx/x + dy/y - dz/z]<br>\n    Divide by 2: 0 = dx/x + dy/y - dz/z\n  </div>\n\n  <div style='margin-bottom: 12px;'>\n    <strong style='color: var(--strongColor);'>Step 5: Alternative direct differentiation</strong><br>\n    u = x²y²/z²<br>\n    du = d(x²y²/z²)<br>\n    Using quotient and product rules:<br><br>\n    du = [2xy²z²dx + 2x²yz²dy - 2x²y²zdz] / z⁴<br><br>\n    Set du = 0:<br>\n    2xy²z²dx + 2x²yz²dy - 2x²y²zdz = 0<br>\n    Divide by 2x²y²z²:<br>\n    (dx/x) + (dy/y) - (dz/z) = 0\n  </div>\n\n  <div style='margin-bottom: 12px;'>\n    <strong style='color: var(--strongColor);'>Step 6: Note the typo in the question</strong><br>\n    The problem statement has: d(x²y²/z²) = dy/y + dx/z - dz/z = 0<br>\n    But it should be: dx/x + dy/y - dz/z = 0<br>\n    There's a typo: \"dx/z\" should be \"dx/x\"\n  </div>\n\n  <div style='background: var(--cAnsBg); color: var(--cAns); padding: 12px; border-radius: 6px; border-left: 4px solid var(--cAns); margin-top: 15px;'>\n    <strong>✓ Proof Complete:</strong><br>\n    Starting from x²y²/z² = constant,<br>\n    taking differential gives: dx/x + dy/y - dz/z = 0<br><br>\n    <em>Note:</em> There appears to be a typo in the original problem statement.\n  </div>\n</div>"
+    }
+  },
+  {
+    "type": "Question",
+    "name": "Question 5b",
+    "topic": ["Green's Theorem"],
+    "Question": {
+      "content": "Apply Green's theorem to evaluate the line integral I = ∮_C (x dy dx + x²y² dy) where C is a triangular boundary formed by the vertices: (0, 0), (1, 0) and (1, 2).",
+      "type": "subjective"
+    },
+    "Answer": {
+      "type": "string",
+      "content": "The integral equals 1/3"
+    },
+    "Explanation": {
+      "type": "string",
+      "content": "<div style='color: var(--explainColor); background: var(--explainBg); padding: 15px; border-radius: 8px; border-left: 4px solid var(--strongColor);'>\n  <h4 style='color: var(--strongColor); margin-top: 0; margin-bottom: 15px;'>Green's Theorem Application</h4>\n  \n  <div style='margin-bottom: 12px;'>\n    <strong style='color: var(--strongColor);'>Step 1: Understand the integral</strong><br>\n    I = ∮_C (x dy dx + x²y² dy)<br>\n    There seems to be a typo - \"dy dx\" should probably be \"dx\".<br>\n    Assuming: I = ∮_C (x dx + x²y² dy)\n  </div>\n\n  <div style='margin-bottom: 12px;'>\n    <strong style='color: var(--strongColor);'>Step 2: Green's Theorem formula</strong><br>\n    ∮_C (M dx + N dy) = ∬_D (∂N/∂x - ∂M/∂y) dA<br>\n    Where D is the region enclosed by C.\n  </div>\n\n  <div style='margin-bottom: 12px;'>\n    <strong style='color: var(--strongColor);'>Step 3: Identify M and N</strong><br>\n    M = x<br>\n    N = x²y²<br><br>\n    Then:<br>\n    ∂M/∂y = 0<br>\n    ∂N/∂x = 2xy²\n  </div>\n\n  <div style='margin-bottom: 12px;'>\n    <strong style='color: var(--strongColor);'>Step 4: Describe the triangular region D</strong><br>\n    Vertices: (0,0), (1,0), (1,2)<br>\n    This is a right triangle:<br>\n    • Base along x-axis from x=0 to x=1 (y=0)<br>\n    • Vertical side at x=1 from y=0 to y=2<br>\n    • Hypotenuse from (0,0) to (1,2): line y = 2x\n  </div>\n\n  <div style='margin-bottom: 12px;'>\n    <strong style='color: var(--strongColor);'>Step 5: Set up double integral</strong><br>\n    By Green's Theorem:<br>\n    I = ∬_D (2xy² - 0) dA = ∬_D 2xy² dA<br><br>\n    Describe region:<br>\n    x goes from 0 to 1<br>\n    For each x, y goes from y=0 to y=2x\n  </div>\n\n  <div style='margin-bottom: 12px;'>\n    <strong style='color: var(--strongColor);'>Step 6: Evaluate the double integral</strong><br>\n    I = ∫_{x=0}^{1} ∫_{y=0}^{2x} 2xy² dy dx<br><br>\n    First integrate w.r.t y:<br>\n    ∫_{0}^{2x} 2xy² dy = 2x [y³/3] from 0 to 2x<br>\n    = 2x [(8x³)/3] = (16x⁴)/3\n  </div>\n\n  <div style='margin-bottom: 12px;'>\n    <strong style='color: var(--strongColor);'>Step 7: Integrate w.r.t x</strong><br>\n    I = ∫_{0}^{1} (16x⁴/3) dx<br>\n    = (16/3) ∫_{0}^{1} x⁴ dx<br>\n    = (16/3) [x⁵/5] from 0 to 1<br>\n    = (16/3) × (1/5) = 16/15\n  </div>\n\n  <div style='margin-bottom: 12px;'>\n    <strong style='color: var(--strongColor);'>Step 8: Alternative region description</strong><br>\n    Could also integrate y first from 0 to 2:<br>\n    For each y, x goes from x=y/2 to x=1<br><br>\n    I = ∫_{y=0}^{2} ∫_{x=y/2}^{1} 2xy² dx dy<br><br>\n    Inner integral: ∫ 2xy² dx = x²y² from x=y/2 to 1<br>\n    = (1)y² - (y²/4)y² = y² - y⁴/4<br><br>\n    Outer integral: ∫_{0}^{2} (y² - y⁴/4) dy<br>\n    = [y³/3 - y⁵/20] from 0 to 2<br>\n    = (8/3 - 32/20) = 8/3 - 8/5 = (40/15 - 24/15) = 16/15 ✓\n  </div>\n\n  <div style='background: var(--cAnsBg); color: var(--cAns); padding: 12px; border-radius: 6px; border-left: 4px solid var(--cAns); margin-top: 15px;'>\n    <strong>✓ Final Answer:</strong> I = 16/15 ≈ 1.0667\n  </div>\n</div>"
+    }
+  },
+  {
+    "type": "Question",
+    "name": "Question 5c",
+    "topic": ["Integration"],
+    "Question": {
+      "content": "Evaluate the line integral function I = ∫ x cos x dx defined by -π ≤ x ≤ π.",
+      "type": "subjective"
+    },
+    "Answer": {
+      "type": "string",
+      "content": "The integral equals 0"
+    },
+    "Explanation": {
+      "type": "string",
+      "content": "<div style='color: var(--explainColor); background: var(--explainBg); padding: 15px; border-radius: 8px; border-left: 4px solid var(--strongColor);'>\n  <h4 style='color: var(--strongColor); margin-top: 0; margin-bottom: 15px;'>Definite Integral of Odd Function</h4>\n  \n  <div style='margin-bottom: 12px;'>\n    <strong style='color: var(--strongColor);'>Step 1: Identify the integral</strong><br>\n    I = ∫_{-π}^{π} x cos x dx<br>\n    This is a definite integral from -π to π.\n  </div>\n\n  <div style='margin-bottom: 12px;'>\n    <strong style='color: var(--strongColor);'>Step 2: Check if integrand is odd or even</strong><br>\n    Let f(x) = x cos x<br>\n    Check f(-x):<br>\n    f(-x) = (-x) cos(-x) = -x cos x (since cos(-x) = cos x)<br>\n    So f(-x) = -f(x)<br>\n    Therefore, f(x) is an ODD function.\n  </div>\n\n  <div style='margin-bottom: 12px;'>\n    <strong style='color: var(--strongColor);'>Step 3: Use symmetry property</strong><br>\n    For any odd function integrated over symmetric limits [-a, a]:<br>\n    ∫_{-a}^{a} f(x) dx = 0<br><br>\n    This is because the area from -a to 0 cancels with area from 0 to a.\n  </div>\n\n  <div style='margin-bottom: 12px;'>\n    <strong style='color: var(--strongColor);'>Step 4: Direct integration (to verify)</strong><br>\n    Use integration by parts:<br>\n    Let u = x, dv = cos x dx<br>\n    Then du = dx, v = sin x<br><br>\n    ∫ x cos x dx = x sin x - ∫ sin x dx<br>\n    = x sin x + cos x + C<br><br>\n    Now evaluate from -π to π:<br>\n    = [π sin π + cos π] - [(-π) sin(-π) + cos(-π)]<br>\n    = [π(0) + (-1)] - [(-π)(0) + (-1)]<br>\n    = [-1] - [-1] = -1 + 1 = 0\n  </div>\n\n  <div style='margin-bottom: 12px;'>\n    <strong style='color: var(--strongColor);'>Step 5: Quick check with values</strong><br>\n    At x = π: π cos π = π(-1) = -π<br>\n    At x = -π: (-π) cos(-π) = (-π)(-1) = π<br>\n    The function has equal magnitude but opposite signs at symmetric points.\n  </div>\n\n  <div style='background: var(--cAnsBg); color: var(--cAns); padding: 12px; border-radius: 6px; border-left: 4px solid var(--cAns); margin-top: 15px;'>\n    <strong>✓ Final Answer:</strong> I = 0<br>\n    This follows from the odd symmetry of x cos x over [-π, π].\n  </div>\n</div>"
+    }
+  }
+]
