@@ -1,47 +1,28 @@
 [
-    
- {
-  "type": "pageInfo",
-  "kind": "subjective and objective",
-  "course_title": "Engineering Mathematics 1",
-  "code": "ENG 20¹.1",
-  "session": "2016/2017",
-  "topics": [
-   "Limits",
-   "Total Differential",
-   "Linear Approximation",
-   "Differentiation",
-   "Partial Differentiation",
-   "Vector Calculus",
-   "Integration",
-   "Partial Fractions",
-   "Related Rates", 
-   "Geometry",
-   "Optimization",
-   "Lagrange Multipliers",
-   "Taylor Series",
-   "Partial Differential Equations", 
-   "Heat Transfer",
-   "Double Integration", 
-   "Volume",
-   "Green's Theorem"
-  ],
-  "time": "120"
- },
- 
- 
- {
-  "type": "Instruction",
-  "content": "Answer any Four questions "
- },
-
-
- {
-  "type": "heading",
-  "heading": "Section A"
- },
-
-
+  
+  {
+    "type": "pageInfo",
+    "kind": "subjective and objective",
+    "course_title": "Engineering Mathematics 1",
+    "code": "ENG 20¹.1",
+    "session": "2016/2017",
+    "topics": ["Limits", "Differentiation", "Integration", "Total Differential", "Related Rates", "Linear Approximation", "Taylor Series", "Optimization", "Lagrange Multipliers", "Partial Differential Equations", "Heat Transfer", "Double Integration", "Volume", "Green's Theorem", "Vector Calculus"],
+    "time": "120"
+  },
+  
+  
+  {
+    "type": "Instruction",
+    "content": "Answer any Four questions "
+  },
+  
+  
+  {
+    "type": "heading",
+    "heading": "Section A"
+  },
+  
+  
   {
     "type": "Question",
     "name": "Question 1a)i",

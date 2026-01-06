@@ -1,39 +1,26 @@
 [
-    
- {
-  "type": "pageInfo",
-  "kind": "subjective and objective",
-  "course_title": "Engineering Mathematics 1",
-  "code": "ENG 201.1",
-  "session": "2018/2019",
-  "topics": [
-   "Limits and Continuity",
-   "Differentiation",
-   "Partial Differentiation",
-   "Integration",
-   "Related Rates", 
-   "Geometry",
-   "Optimization",
-   "Lagrange Multipliers",
-   "Taylor Series",
-   "Line Integrals",
-   "Total Differential",
-   "Green's Theorem"
-  ],
-  "time": "120"
- },
- 
- 
- {
-  "type": "Instruction",
-  "content": "Answer any Four questions "
- },
-
-
- {
-  "type": "heading",
-  "heading": "Section A"
- },
+  
+  {
+    "type": "pageInfo",
+    "kind": "subjective and objective",
+    "course_title": "Engineering Mathematics 1",
+    "code": "ENG 201.1",
+    "session": "2018/2019",
+    "topics": ["Limits and Continuity", "Differentiation", "Partial Differentiation", "Integration", "Related Rates", "Geometry", "Optimization", "Lagrange Multipliers", "Taylor Series", "Line Integrals", "Total Differential", "Green's Theorem"],
+    "time": "120"
+  },
+  
+  
+  {
+    "type": "Instruction",
+    "content": "Answer any Four questions "
+  },
+  
+  
+  {
+    "type": "heading",
+    "heading": "Section A"
+  },
   {
     "type": "Question",
     "name": "Question 1a)i",
@@ -78,7 +65,7 @@
     },
     "Answer": {
       "type": "string",
-      "content":  "\\frac{dZ}{dy} = \\frac{-16x}{(5x + y)^2} "
+      "content": "\\frac{dZ}{dy} = \\frac{-16x}{(5x + y)^2} "
     },
     "Explanation": {
       "type": "string",
