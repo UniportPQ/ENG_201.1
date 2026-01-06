@@ -1,0 +1,322 @@
+[
+  
+  {
+    "type": "pageInfo",
+    "kind": "subjective and objective",
+    "course_title": "Engineering Mathematics 1",
+    "code": "ENG 201.1",
+    "session": "2021/2022",
+    "topics": [
+      "Calculus", "Functions", "Continuity", "Limits", "Integration", "Partial Differentiation", "Jacobians", "Vector Calculus", "Line Integrals", "Total Differential", "Rates of Change", "Double Integrals", "Taylor Series"
+    ],
+    "time": "120"
+  },
+  
+  
+  {
+    "type": "Instruction",
+    "content": "Answer any Four questions "
+  },
+  {
+    "type": "Question",
+    "name": "Question 1",
+    "topic": [
+      "Calculus",
+      "Functions",
+      "Continuity"
+    ],
+    "Question": {
+      "content": "Find the point(s) of discontinuity for this function \\( f(x) = \\frac{x-1}{x+5} \\)",
+      "type": "subjective"
+    },
+    "Answer": {
+      "type": "string",
+      "content": "\\( x = -5 \\)"
+    },
+    "Explanation": {
+      "type": "string",
+      "content": "<div style='color: var(--explainColor); background: var(--explainBg); padding: 15px; border-radius: 8px; border-left: 4px solid var(--strongColor);'>\n  <h4 style='color: var(--strongColor); margin-top: 0; margin-bottom: 15px;'>Finding Discontinuity</h4>\n  \n  <div style='margin-bottom: 12px;'>\n    <strong style='color: var(--strongColor);'>Concept</strong><br>\n    A rational function (a fraction with algebra) is discontinuous (breaks) wherever the bottom part (denominator) equals zero. This is because division by zero is undefined in mathematics.\n  </div>\n\n  <div style='margin-bottom: 12px;'>\n    <strong style='color: var(--strongColor);'>Step 1: Set Denominator to Zero</strong><br>\n    The function is \\( f(x) = \\frac{x-1}{x+5} \\).<br>\n    The denominator is \\( x + 5 \\).<br>\n    Set \\( x + 5 = 0 \\).\n  </div>\n\n  <div style='margin-bottom: 12px;'>\n    <strong style='color: var(--strongColor);'>Step 2: Solve for x</strong><br>\n    Subtract 5 from both sides:<br>\n    \\( x = -5 \\)\n  </div>\n\n  <div style='background: var(--cAnsBg); color: var(--cAns); padding: 12px; border-radius: 6px; border-left: 4px solid var(--cAns); margin-top: 15px;'>\n    <strong>✓ Final Answer:</strong> The point of discontinuity is at <strong>x = -5</strong>.\n  </div>\n</div>"
+    }
+  },
+  {
+    "type": "Question",
+    "name": "Question 2",
+    "topic": [
+      "Calculus",
+      "Limits"
+    ],
+    "Question": {
+      "content": "Determine the value of \\( f(x) \\) that is defined by the function given \\( f(x) = \\lim_{x \\to \\infty} \\left[ \\frac{2x-1}{x+4} \\right] \\)",
+      "type": "subjective"
+    },
+    "Answer": {
+      "type": "string",
+      "content": "2"
+    },
+    "Explanation": {
+      "type": "string",
+      "content": "<div style='color: var(--explainColor); background: var(--explainBg); padding: 15px; border-radius: 8px; border-left: 4px solid var(--strongColor);'>\n  <h4 style='color: var(--strongColor); margin-top: 0; margin-bottom: 15px;'>Limits at Infinity</h4>\n  \n  <div style='margin-bottom: 12px;'>\n    <strong style='color: var(--strongColor);'>Step 1: Divide by Highest Power of x</strong><br>\n    To find the limit as \\( x \\) goes to infinity, we divide every term by the highest power of \\( x \\) in the denominator (which is \\( x \\)).<br>\n    \\( \\frac{2x/x - 1/x}{x/x + 4/x} \\).\n  </div>\n\n  <div style='margin-bottom: 12px;'>\n    <strong style='color: var(--strongColor);'>Step 2: Simplify</strong><br>\n    This simplifies to:\n    \\( \\frac{2 - \\frac{1}{x}}{1 + \\frac{4}{x}} \\)\n  </div>\n\n  <div style='margin-bottom: 12px;'>\n    <strong style='color: var(--strongColor);'>Step 3: Apply the Limit</strong><br>\n    As \\( x \\to \\infty \\), any term divided by \\( x \\) (like \\( \\frac{1}{x} \\) or \\( \\frac{4}{x} \\)) becomes 0.<br>\n    \\( = \\frac{2 - 0}{1 + 0} = \\frac{2}{1} = 2 \\)\n  </div>\n\n  <div style='background: var(--cAnsBg); color: var(--cAns); padding: 12px; border-radius: 6px; border-left: 4px solid var(--cAns); margin-top: 15px;'>\n    <strong>✓ Final Answer:</strong> 2\n  </div>\n</div>"
+    }
+  },
+  {
+    "type": "Question",
+    "name": "Question 3",
+    "topic": [
+      "Calculus",
+      "Integration"
+    ],
+    "Question": {
+      "content": "Find the complete solution to the integral function, \\( I = \\int_{1}^{3} (x^2 - 4x + 3) dx \\)",
+      "type": "subjective"
+    },
+    "Answer": {
+      "type": "string",
+      "content": "-4/3"
+    },
+    "Explanation": {
+      "type": "string",
+      "content": "<div style='color: var(--explainColor); background: var(--explainBg); padding: 15px; border-radius: 8px; border-left: 4px solid var(--strongColor);'>\n  <h4 style='color: var(--strongColor); margin-top: 0; margin-bottom: 15px;'>Definite Integral</h4>\n  \n  <div style='margin-bottom: 12px;'>\n    <strong style='color: var(--strongColor);'>Step 1: Integrate Each Term</strong><br>\n    Use the power rule \\( \\int x^n dx = \\frac{x^{n+1}}{n+1} \\).<br>\n    \\( \\int x^2 dx = \\frac{x^3}{3} \\)<br>\n    \\( \\int -4x dx = -\\frac{4x^2}{2} = -2x^2 \\)<br>\n    \\( \\int 3 dx = 3x \\)<br>\n    Result: \\( [\\frac{x^3}{3} - 2x^2 + 3x]_{1}^{3} \\).\n  </div>\n\n  <div style='margin-bottom: 12px;'>\n    <strong style='color: var(--strongColor);'>Step 2: Apply Limits (Upper - Lower)</strong><br>\n    <strong>Upper Limit (3):</strong><br>\n    \\( (\\frac{3^3}{3} - 2(3^2) + 3(3)) = (9 - 18 + 9) = 0 \\)<br>\n    <strong>Lower Limit (1):</strong><br>\n    \\( (\\frac{1^3}{3} - 2(1^2) + 3(1)) = (\\frac{1}{3} - 2 + 3) = \\frac{1}{3} + 1 = \\frac{4}{3} \\)\n  </div>\n\n  <div style='margin-bottom: 12px;'>\n    <strong style='color: var(--strongColor);'>Step 3: Subtract</strong><br>\n    Upper - Lower = \\( 0 - \\frac{4}{3} = -\\frac{4}{3} \\).\n  </div>\n\n  <div style='background: var(--cAnsBg); color: var(--cAns); padding: 12px; border-radius: 6px; border-left: 4px solid var(--cAns); margin-top: 15px;'>\n    <strong>✓ Final Answer:</strong> -4/3\n  </div>\n</div>"
+    }
+  },
+  {
+    "type": "Question",
+    "name": "Question 4",
+    "topic": [
+      "Calculus",
+      "Partial Differentiation"
+    ],
+    "Question": {
+      "content": "Write down the formula for differentiating the function, \\( z = z(x, y) \\), from first principle with respect to x and y respectively.",
+      "type": "subjective"
+    },
+    "Answer": {
+      "type": "string",
+      "content": "See explanation for formulas."
+    },
+    "Explanation": {
+      "type": "string",
+      "content": "<div style='color: var(--explainColor); background: var(--explainBg); padding: 15px; border-radius: 8px; border-left: 4px solid var(--strongColor);'>\n  <h4 style='color: var(--strongColor); margin-top: 0; margin-bottom: 15px;'>First Principle Formulas</h4>\n  \n  <div style='margin-bottom: 12px;'>\n    <strong style='color: var(--strongColor);'>Differentiation wrt x:</strong><br>\n    When differentiating with respect to x, we increment x by \\(\\Delta x\\) while keeping y constant.<br>\n    \\[ \\frac{\\partial z}{\\partial x} = \\lim_{\\Delta x \\to 0} \\left( \\frac{z(x + \\Delta x, y) - z(x, y)}{\\Delta x} \\right) \\]\n   \n  </div>\n\n  <div style='margin-bottom: 12px;'>\n    <strong style='color: var(--strongColor);'>Differentiation wrt y:</strong><br>\n    When differentiating with respect to y, we increment y by \\(\\Delta y\\) while keeping x constant.<br>\n    \\[ \\frac{\\partial z}{\\partial y} = \\lim_{\\Delta y \\to 0} \\left( \\frac{z(x, y + \\Delta y) - z(x, y)}{\\Delta y} \\right) \\]\n   \n  </div>\n</div>"
+    }
+  },
+  {
+    "type": "Question",
+    "name": "Question 5",
+    "topic": [
+      "Calculus",
+      "Integration"
+    ],
+    "Question": {
+      "content": "Evaluate the function, \\( I = \\int e^{(4x-5)} dx \\)",
+      "type": "subjective"
+    },
+    "Answer": {
+      "type": "string",
+      "content": "\\( \\frac{1}{4}e^{4x-5} + C \\)"
+    },
+    "Explanation": {
+      "type": "string",
+      "content": "<div style='color: var(--explainColor); background: var(--explainBg); padding: 15px; border-radius: 8px; border-left: 4px solid var(--strongColor);'>\n  <h4 style='color: var(--strongColor); margin-top: 0; margin-bottom: 15px;'>Integration by Substitution (Reverse Chain Rule)</h4>\n  \n  <div style='margin-bottom: 12px;'>\n    <strong style='color: var(--strongColor);'>Step 1: Identify u</strong><br>\n    Let \\( u = 4x - 5 \\).<br>\n    Then \\( \\frac{du}{dx} = 4 \\), which means \\( dx = \\frac{du}{4} \\).\n  </div>\n\n  <div style='margin-bottom: 12px;'>\n    <strong style='color: var(--strongColor);'>Step 2: Substitute and Integrate</strong><br>\n    \\( \\int e^u \\cdot \\frac{du}{4} = \\frac{1}{4} \\int e^u du \\)<br>\n    The integral of \\( e^u \\) is simply \\( e^u \\).<br>\n    \\( = \\frac{1}{4}e^u + C \\)\n  </div>\n\n  <div style='margin-bottom: 12px;'>\n    <strong style='color: var(--strongColor);'>Step 3: Replace u</strong><br>\n    Replace u back with \\( 4x-5 \\).\n  </div>\n\n  <div style='background: var(--cAnsBg); color: var(--cAns); padding: 12px; border-radius: 6px; border-left: 4px solid var(--cAns); margin-top: 15px;'>\n    <strong>✓ Final Answer:</strong>\n    \\[ \\frac{1}{4}e^{4x-5} + C \\]\n  </div>\n</div>"
+    }
+  },
+  {
+    "type": "Question",
+    "name": "Question 6",
+    "topic": [
+      "Calculus",
+      "Integration"
+    ],
+    "Question": {
+      "content": "Show a simplified solution to the integral function, \\( I = \\int [\\frac{3}{2x} - \\frac{3}{2}(\\frac{1}{x+2})] dx \\)",
+      "type": "subjective"
+    },
+    "Answer": {
+      "type": "string",
+      "content": "\\( \\frac{3}{2} \\ln(\\frac{x}{x+2}) + C \\)"
+    },
+    "Explanation": {
+      "type": "string",
+      "content": "<div style='color: var(--explainColor); background: var(--explainBg); padding: 15px; border-radius: 8px; border-left: 4px solid var(--strongColor);'>\n  <h4 style='color: var(--strongColor); margin-top: 0; margin-bottom: 15px;'>Logarithmic Integration</h4>\n  \n  <div style='margin-bottom: 12px;'>\n    <strong style='color: var(--strongColor);'>Step 1: Factor out Constants</strong><br>\n    Both terms share \\( \\frac{3}{2} \\). Factor it out:<br>\n    \\( I = \\frac{3}{2} \\int (\\frac{1}{x} - \\frac{1}{x+2}) dx \\).\n  </div>\n\n  <div style='margin-bottom: 12px;'>\n    <strong style='color: var(--strongColor);'>Step 2: Integrate</strong><br>\n    Recall that \\( \\int \\frac{1}{x} dx = \\ln(x) \\).<br>\n    So, \\( \\int (\\frac{1}{x} - \\frac{1}{x+2}) dx = \\ln(x) - \\ln(x+2) \\).\n  </div>\n\n  <div style='margin-bottom: 12px;'>\n    <strong style='color: var(--strongColor);'>Step 3: Apply Log Rules</strong><br>\n    \\( \\ln(a) - \\ln(b) = \\ln(\\frac{a}{b}) \\).<br>\n    So, \\( \\frac{3}{2} [\\ln(x) - \\ln(x+2)] = \\frac{3}{2} \\ln(\\frac{x}{x+2}) \\).\n  </div>\n\n  <div style='background: var(--cAnsBg); color: var(--cAns); padding: 12px; border-radius: 6px; border-left: 4px solid var(--cAns); margin-top: 15px;'>\n    <strong>✓ Final Answer:</strong>\n    \\[ \\frac{3}{2}(\\ln x - \\ln(x+2)) + C \\]\n  </div>\n</div>"
+    }
+  },
+  {
+    "type": "Question",
+    "name": "Question 7",
+    "topic": [
+      "Calculus",
+      "Partial Differentiation"
+    ],
+    "Question": {
+      "content": "Find the \\( \\frac{\\partial^2 z}{\\partial x \\partial y} \\) of the function \\( z = \\ln(1 + xy^2) \\)",
+      "type": "subjective"
+    },
+    "Answer": {
+      "type": "string",
+      "content": "\\( \\frac{2y}{(1+xy^2)^2} \\)"
+    },
+    "Explanation": {
+      "type": "string",
+      "content": "<div style='color: var(--explainColor); background: var(--explainBg); padding: 15px; border-radius: 8px; border-left: 4px solid var(--strongColor);'>\n  <h4 style='color: var(--strongColor); margin-top: 0; margin-bottom: 15px;'>Mixed Partial Derivative</h4>\n  \n  <div style='margin-bottom: 12px;'>\n    <strong style='color: var(--strongColor);'>Step 1: First Derivative wrt x</strong><br>\n    \\( \\frac{\\partial z}{\\partial x} = \\frac{\\partial}{\\partial x} \\ln(1+xy^2) = \\frac{1}{1+xy^2} \\cdot (y^2) = \\frac{y^2}{1+xy^2} \\).\n  </div>\n\n  <div style='margin-bottom: 12px;'>\n    <strong style='color: var(--strongColor);'>Step 2: Second Derivative wrt y</strong><br>\n    Now differentiate the result with respect to y using Quotient Rule \\( \\frac{u}{v} \\):<br>\n    \\( u = y^2 \\implies u' = 2y \\)<br>\n    \\( v = 1+xy^2 \\implies v' = 2xy \\)<br>\n    Formula: \\( \\frac{vu' - uv'}{v^2} \\)<br>\n    \\( \\frac{(1+xy^2)(2y) - (y^2)(2xy)}{(1+xy^2)^2} \\)\n  </div>\n\n  <div style='margin-bottom: 12px;'>\n    <strong style='color: var(--strongColor);'>Step 3: Simplify</strong><br>\n    \\( \\frac{2y + 2xy^3 - 2xy^3}{(1+xy^2)^2} = \\frac{2y}{(1+xy^2)^2} \\).\n  </div>\n\n  <div style='background: var(--cAnsBg); color: var(--cAns); padding: 12px; border-radius: 6px; border-left: 4px solid var(--cAns); margin-top: 15px;'>\n    <strong>✓ Final Answer:</strong>\n    \\[ \\frac{2y}{(1+xy^2)^2} \\]\n  </div>\n</div>"
+    }
+  },
+  {
+    "type": "Question",
+    "name": "Question 8",
+    "topic": [
+      "Calculus",
+      "Jacobians"
+    ],
+    "Question": {
+      "content": "Find the Jacobian \\( J(r, \\theta) \\) for a function, \\( z = f(x, y) \\). Where \\( x = r \\cos \\theta, y = r \\sin \\theta \\)",
+      "type": "subjective"
+    },
+    "Answer": {
+      "type": "string",
+      "content": "r"
+    },
+    "Explanation": {
+      "type": "string",
+      "content": "<div style='color: var(--explainColor); background: var(--explainBg); padding: 15px; border-radius: 8px; border-left: 4px solid var(--strongColor);'>\n  <h4 style='color: var(--strongColor); margin-top: 0; margin-bottom: 15px;'>Jacobian of Polar Coordinates</h4>\n  \n  <div style='margin-bottom: 12px;'>\n    <strong style='color: var(--strongColor);'>Step 1: Definition</strong><br>\n    The Jacobian determinant is defined as:\n    \\[ J = \\begin{vmatrix} \\frac{\\partial x}{\\partial r} & \\frac{\\partial y}{\\partial r} \\\\ \\frac{\\partial x}{\\partial \\theta} & \\frac{\\partial y}{\\partial \\theta} \\end{vmatrix} \\]\n   \n  </div>\n\n  <div style='margin-bottom: 12px;'>\n    <strong style='color: var(--strongColor);'>Step 2: Find Derivatives</strong><br>\n    \\( \\frac{\\partial x}{\\partial r} = \\cos \\theta, \\quad \\frac{\\partial x}{\\partial \\theta} = -r \\sin \\theta \\)<br>\n    \\( \\frac{\\partial y}{\\partial r} = \\sin \\theta, \\quad \\frac{\\partial y}{\\partial \\theta} = r \\cos \\theta \\)\n  </div>\n\n  <div style='margin-bottom: 12px;'>\n    <strong style='color: var(--strongColor);'>Step 3: Calculate Determinant</strong><br>\n    \\( (\\cos \\theta)(r \\cos \\theta) - (\\sin \\theta)(-r \\sin \\theta) \\)<br>\n    \\( = r \\cos^2 \\theta + r \\sin^2 \\theta \\)<br>\n    \\( = r(\\cos^2 \\theta + \\sin^2 \\theta) \\)\n  </div>\n\n  <div style='margin-bottom: 12px;'>\n    Since \\( \\cos^2 \\theta + \\sin^2 \\theta = 1 \\), the result is \\( r \\).\n  </div>\n\n  <div style='background: var(--cAnsBg); color: var(--cAns); padding: 12px; border-radius: 6px; border-left: 4px solid var(--cAns); margin-top: 15px;'>\n    <strong>✓ Final Answer:</strong> r\n  </div>\n</div>"
+    }
+  },
+  {
+    "type": "Question",
+    "name": "Question 9",
+    "topic": [
+      "Vector Calculus",
+      "Line Integrals"
+    ],
+    "Question": {
+      "content": "Find the value of the line integral of the vector function \\( u(x, y) = 2yi + xj \\) along the straight line from (0,0) to (2,4).",
+      "type": "subjective"
+    },
+    "Answer": {
+      "type": "string",
+      "content": "12"
+    },
+    "Explanation": {
+      "type": "string",
+      "content": "<div style='color: var(--explainColor); background: var(--explainBg); padding: 15px; border-radius: 8px; border-left: 4px solid var(--strongColor);'>\n  <h4 style='color: var(--strongColor); margin-top: 0; margin-bottom: 15px;'>Line Integral Parametrization</h4>\n  \n  <div style='margin-bottom: 12px;'>\n    <strong style='color: var(--strongColor);'>Step 1: Parametrize the Line</strong><br>\n    The line goes from (0,0) to (2,4).<br>\n    We can set \\( x = 2t \\) and \\( y = 4t \\) for \\( 0 \\le t \\le 1 \\).<br>\n    Then \\( dx = 2dt \\) and \\( dy = 4dt \\).\n  </div>\n\n  <div style='margin-bottom: 12px;'>\n    <strong style='color: var(--strongColor);'>Step 2: Substitute into Integral</strong><br>\n    The integral is \\( \\int u \\cdot dr = \\int (2y \\, dx + x \\, dy) \\).<br>\n    Substitute x, y, dx, dy:<br>\n    \\( \\int_{0}^{1} [2(4t)(2dt) + (2t)(4dt)] \\)<br>\n    \\( \\int_{0}^{1} [16t \\, dt + 8t \\, dt] \\)<br>\n    \\( \\int_{0}^{1} 24t \\, dt \\).\n  </div>\n\n  <div style='margin-bottom: 12px;'>\n    <strong style='color: var(--strongColor);'>Step 3: Evaluate</strong><br>\n    \\( [\\frac{24t^2}{2}]_{0}^{1} = [12t^2]_{0}^{1} = 12(1)^2 - 0 = 12 \\).\n  </div>\n\n  <div style='background: var(--cAnsBg); color: var(--cAns); padding: 12px; border-radius: 6px; border-left: 4px solid var(--cAns); margin-top: 15px;'>\n    <strong>✓ Final Answer:</strong> 12\n  </div>\n</div>"
+    }
+  },
+  {
+    "type": "Question",
+    "name": "Question 10",
+    "topic": [
+      "Vector Calculus",
+      "Line Integrals"
+    ],
+    "Question": {
+      "content": "Estimate the value of the line integral along a path joining the origin and the point (1,1,1) for \\( u(x, y, z) = 2yi + xj + 0zk \\).",
+      "type": "subjective"
+    },
+    "Answer": {
+      "type": "string",
+      "content": "1.5"
+    },
+    "Explanation": {
+      "type": "string",
+      "content": "<div style='color: var(--explainColor); background: var(--explainBg); padding: 15px; border-radius: 8px; border-left: 4px solid var(--strongColor);'>\n  <h4 style='color: var(--strongColor); margin-top: 0; margin-bottom: 15px;'>3D Line Integral</h4>\n  \n  <div style='margin-bottom: 12px;'>\n    <strong style='color: var(--strongColor);'>Step 1: Parametrize the Path</strong><br>\n    Path from (0,0,0) to (1,1,1).<br>\n    Let \\( x=t, y=t, z=t \\) for \\( 0 \\le t \\le 1 \\).<br>\n    Then \\( dx=dt, dy=dt, dz=dt \\).\n  </div>\n\n  <div style='margin-bottom: 12px;'>\n    <strong style='color: var(--strongColor);'>Step 2: Substitute</strong><br>\n    Integral: \\( \\int (2y \\, dx + x \\, dy + 0 \\, dz) \\)<br>\n    \\( = \\int_{0}^{1} (2(t)(dt) + (t)(dt)) \\)<br>\n    \\( = \\int_{0}^{1} 3t \\, dt \\).\n  </div>\n\n  <div style='margin-bottom: 12px;'>\n    <strong style='color: var(--strongColor);'>Step 3: Evaluate</strong><br>\n    \\( [\\frac{3t^2}{2}]_{0}^{1} = \\frac{3}{2}(1)^2 = 1.5 \\).\n  </div>\n\n  <div style='background: var(--cAnsBg); color: var(--cAns); padding: 12px; border-radius: 6px; border-left: 4px solid var(--cAns); margin-top: 15px;'>\n    <strong>✓ Final Answer:</strong> 1.5\n  </div>\n</div>"
+    }
+  },
+  {
+    "type": "Question",
+    "name": "Question 1a",
+    "topic": [
+      "Calculus",
+      "Total Differential"
+    ],
+    "Question": {
+      "content": "Show that a total differentiation of the function \\( f(x, y, z) = \\frac{x^2y^2}{z^2} = 0 \\) yields \\( \\frac{dx}{x} + \\frac{dy}{y} + \\frac{dz}{z} = 0 \\) (Note: The question text has a typo \"+ dz/z\" where it should likely be \"- dz/z\" based on the math, or the relationship equals a constant). Let's solve the total differential \\( \\frac{df}{f} \\).",
+      "type": "subjective"
+    },
+    "Answer": {
+      "type": "string",
+      "content": "\\( 2(\\frac{dx}{x} + \\frac{dy}{y} - \\frac{dz}{z}) \\)"
+    },
+    "Explanation": {
+      "type": "string",
+      "content": "<div style='color: var(--explainColor); background: var(--explainBg); padding: 15px; border-radius: 8px; border-left: 4px solid var(--strongColor);'>\n  <h4 style='color: var(--strongColor); margin-top: 0; margin-bottom: 15px;'>Logarithmic Differentiation</h4>\n  \n  <div style='margin-bottom: 12px;'>\n    <strong style='color: var(--strongColor);'>Step 1: Use Logs</strong><br>\n    Given \\( f = x^2y^2z^{-2} \\).<br>\n    Take natural log of both sides:<br>\n    \\( \\ln f = \\ln(x^2) + \\ln(y^2) - \\ln(z^2) \\)<br>\n    \\( \\ln f = 2\\ln x + 2\\ln y - 2\\ln z \\)\n  </div>\n\n  <div style='margin-bottom: 12px;'>\n    <strong style='color: var(--strongColor);'>Step 2: Differentiate</strong><br>\n    Take the total differential \\( d \\):<br>\n    \\( \\frac{df}{f} = 2\\frac{dx}{x} + 2\\frac{dy}{y} - 2\\frac{dz}{z} \\)\n    \\( \\frac{df}{f} = 2(\\frac{dx}{x} + \\frac{dy}{y} - \\frac{dz}{z}) \\).\n  </div>\n\n  <div style='background: var(--cAnsBg); color: var(--cAns); padding: 12px; border-radius: 6px; border-left: 4px solid var(--cAns); margin-top: 15px;'>\n    <strong>✓ Conclusion:</strong>\n    The workings show the relationship leads to \\( 2(\\frac{dx}{x} + \\frac{dy}{y} - \\frac{dz}{z}) \\).\n  </div>\n</div>"
+    }
+  },
+  {
+    "type": "Question",
+    "name": "Question 1b",
+    "topic": [
+      "Vector Calculus",
+      "Line Integrals"
+    ],
+    "Question": {
+      "content": "Let \\( I = \\oint_c [2xydx + (3+y^2)dy] = I_{AB} + I_{BC} + I_{CD} + I_{DA} \\) where c is the boundary of the rectangle joining A(1,0), B(3,0), C(3,2), D(1,2). Evaluate \\( I_{AB} \\) and \\( I_{DA} \\).",
+      "type": "subjective"
+    },
+    "Answer": {
+      "type": "string",
+      "content": "\\( I_{AB} = 0, \\quad I_{DA} = -8.67 \\)"
+    },
+    "Explanation": {
+      "type": "string",
+      "content": "<div style='color: var(--explainColor); background: var(--explainBg); padding: 15px; border-radius: 8px; border-left: 4px solid var(--strongColor);'>\n  <h4 style='color: var(--strongColor); margin-top: 0; margin-bottom: 15px;'>Line Integral on Rectangle Edges</h4>\n  \n  <div style='margin-bottom: 12px;'>\n    <strong style='color: var(--strongColor);'>Part 1: Evaluate \\( I_{AB} \\) (Bottom Edge)</strong><br>\n    Path from A(1,0) to B(3,0).<br>\n    \\( y = 0 \\) (constant) \\( \\implies dy = 0 \\).<br>\n    \\( x \\) goes from 1 to 3.<br>\n    Substitute into integrand \\( [2xydx + (3+y^2)dy] \\):<br>\n    Since \\( y=0 \\) and \\( dy=0 \\), the whole term becomes 0.<br>\n    \\( \\int_{1}^{3} 0 \\, dx = 0 \\).\n  </div>\n\n  <div style='margin-bottom: 12px;'>\n    <strong style='color: var(--strongColor);'>Part 2: Evaluate \\( I_{DA} \\) (Left Edge)</strong><br>\n    Path from D(1,2) to A(1,0).<br>\n    \\( x = 1 \\) (constant) \\( \\implies dx = 0 \\).<br>\n    \\( y \\) goes from 2 to 0.<br>\n    Substitute into integrand:<br>\n    \\( \\int_{2}^{0} [2(1)y(0) + (3+y^2)dy] \\)<br>\n    \\( = \\int_{2}^{0} (3+y^2) dy \\)<br>\n    Integrate: \\( [3y + \\frac{y^3}{3}]_{2}^{0} \\)<br>\n    Upper limit (0): 0<br>\n    Lower limit (2): \\( 3(2) + \\frac{8}{3} = 6 + 2.67 = 8.67 \\)<br>\n    Result: \\( 0 - 8.67 = -8.67 \\) (or \\( -26/3 \\)).\n  </div>\n\n  <div style='background: var(--cAnsBg); color: var(--cAns); padding: 12px; border-radius: 6px; border-left: 4px solid var(--cAns); margin-top: 15px;'>\n    <strong>✓ Final Answer:</strong>\n    \\( I_{AB} = 0 \\)<br>\n    \\( I_{DA} = -8.67 \\)\n  </div>\n</div>"
+    }
+  },
+  {
+    "type": "Question",
+    "name": "Question 2a",
+    "topic": [
+      "Calculus",
+      "Rates of Change"
+    ],
+    "Question": {
+      "content": "Determine the expressions for the rate at which the total surface area of a right circular cylinder will be increasing or decreasing based on the following conditions: (i) That, at constant radius, cylinder height increases at 4cm/s (ii) That, at constant height, radius decreases at 5cm/s.",
+      "type": "subjective"
+    },
+    "Answer": {
+      "type": "string",
+      "content": "(i) \\( 8\\pi r \\) cm/s (ii) \\( -10\\pi(2r+h) \\) cm/s"
+    },
+    "Explanation": {
+      "type": "string",
+      "content": "<div style='color: var(--explainColor); background: var(--explainBg); padding: 15px; border-radius: 8px; border-left: 4px solid var(--strongColor);'>\n  <h4 style='color: var(--strongColor); margin-top: 0; margin-bottom: 15px;'>Related Rates (Cylinder)</h4>\n  \n  <div style='margin-bottom: 12px;'>\n    <strong style='color: var(--strongColor);'>Formula:</strong><br>\n    Total Surface Area \\( A = 2\\pi r^2 + 2\\pi rh \\).<br>\n    Differentiating with respect to time \\( t \\):<br>\n    \\( \\frac{dA}{dt} = \\frac{\\partial A}{\\partial r}\\frac{dr}{dt} + \\frac{\\partial A}{\\partial h}\\frac{dh}{dt} \\)<br>\n    \\( \\frac{dA}{dt} = (4\\pi r + 2\\pi h)\\frac{dr}{dt} + (2\\pi r)\\frac{dh}{dt} \\).\n  </div>\n\n  <div style='margin-bottom: 12px;'>\n    <strong style='color: var(--strongColor);'>Case (i): Constant radius, height increases</strong><br>\n    \\( \\frac{dr}{dt} = 0 \\), \\( \\frac{dh}{dt} = 4 \\).<br>\n    \\( \\frac{dA}{dt} = (4\\pi r + 2\\pi h)(0) + (2\\pi r)(4) \\)<br>\n    \\( = 8\\pi r \\) cm/s.\n  </div>\n\n  <div style='margin-bottom: 12px;'>\n    <strong style='color: var(--strongColor);'>Case (ii): Constant height, radius decreases</strong><br>\n    \\( \\frac{dh}{dt} = 0 \\), \\( \\frac{dr}{dt} = -5 \\).<br>\n    \\( \\frac{dA}{dt} = (4\\pi r + 2\\pi h)(-5) + (2\\pi r)(0) \\)<br>\n    \\( = -5(2\\pi)(2r + h) \\)<br>\n    \\( = -10\\pi(2r + h) \\) cm/s.\n  </div>\n</div>"
+    }
+  },
+  {
+    "type": "Question",
+    "name": "Question 2b",
+    "topic": [
+      "Calculus",
+      "Double Integrals"
+    ],
+    "Question": {
+      "content": "Compute the double integral \\( V = \\int_{0}^{2} \\int_{0}^{1} 9x^2y^2 dy dx \\)",
+      "type": "subjective"
+    },
+    "Answer": {
+      "type": "string",
+      "content": "8"
+    },
+    "Explanation": {
+      "type": "string",
+      "content": "<div style='color: var(--explainColor); background: var(--explainBg); padding: 15px; border-radius: 8px; border-left: 4px solid var(--strongColor);'>\n  <h4 style='color: var(--strongColor); margin-top: 0; margin-bottom: 15px;'>Double Integration</h4>\n  \n  <div style='margin-bottom: 12px;'>\n    <strong style='color: var(--strongColor);'>Step 1: Inner Integral (dy)</strong><br>\n    Integrate \\( 9x^2y^2 \\) with respect to y (treating x as constant) from 0 to 1.<br>\n    \\( \\int_{0}^{1} 9x^2y^2 dy = 9x^2 [\\frac{y^3}{3}]_{0}^{1} \\)<br>\n    \\( = 9x^2 (\\frac{1}{3} - 0) = 3x^2 \\).\n  </div>\n\n  <div style='margin-bottom: 12px;'>\n    <strong style='color: var(--strongColor);'>Step 2: Outer Integral (dx)</strong><br>\n    Now integrate the result \\( 3x^2 \\) with respect to x from 0 to 2.<br>\n    \\( \\int_{0}^{2} 3x^2 dx = [\\frac{3x^3}{3}]_{0}^{2} = [x^3]_{0}^{2} \\)<br>\n    \\( = 2^3 - 0^3 = 8 \\).\n  </div>\n\n  <div style='background: var(--cAnsBg); color: var(--cAns); padding: 12px; border-radius: 6px; border-left: 4px solid var(--cAns); margin-top: 15px;'>\n    <strong>✓ Final Answer:</strong> 8\n  </div>\n</div>"
+    }
+  },
+  {
+    "type": "Question",
+    "name": "Question 3b",
+    "topic": [
+      "Calculus",
+      "Taylor Series"
+    ],
+    "Question": {
+      "content": "Determine the Taylor's series expansion of the function \\( z = \\ln(\\frac{y}{x}) \\) at \\( (\\sqrt{3}, 1) \\) to the second order term.",
+      "type": "subjective"
+    },
+    "Answer": {
+      "type": "string",
+      "content": "\\( \\frac{1}{6}(x^2 - 4\\sqrt{3}x - 3(y^2 - 4y + \\ln 3)) \\)"
+    },
+    "Explanation": {
+      "type": "string",
+      "content": "<div style='color: var(--explainColor); background: var(--explainBg); padding: 15px; border-radius: 8px; border-left: 4px solid var(--strongColor);'>\n  <h4 style='color: var(--strongColor); margin-top: 0; margin-bottom: 15px;'>Taylor Series Expansion</h4>\n  \n  <div style='margin-bottom: 12px;'>\n    <strong style='color: var(--strongColor);'>Step 1: Evaluate Derivatives at Point</strong><br>\n    We need values for \\( f, f_x, f_y, f_{xx}, f_{yy} \\) at \\( (\\sqrt{3}, 1) \\).<br>\n    From previous workings:<br>\n    \\( f_x = -\\frac{1}{\\sqrt{3}}, \\quad f_y = 1 \\)<br>\n    \\( f_{xx} = \\frac{1}{3}, \\quad f_{yy} = -1, \\quad f_{xy} = 0 \\)\n  </div>\n\n  <div style='margin-bottom: 12px;'>\n    <strong style='color: var(--strongColor);'>Step 2: Substitute into Formula</strong><br>\n    \\( f(x,y) \\approx f(a,b) + f_x(x-a) + f_y(y-b) + \\frac{1}{2}[f_{xx}(x-a)^2 + f_{yy}(y-b)^2] \\)<br>\n    \\( \\approx \\ln(\\frac{1}{\\sqrt{3}}) - \\frac{1}{\\sqrt{3}}(x-\\sqrt{3}) + (y-1) + \\frac{1}{2}[\\frac{1}{3}(x-\\sqrt{3})^2 - (y-1)^2] \\)\n  </div>\n\n  <div style='margin-bottom: 12px;'>\n    <strong style='color: var(--strongColor);'>Step 3: Expansion and Simplification</strong><br>\n    The handwritten solution expands the squared terms and groups them:<br>\n    \\( = \\frac{1}{6}(x^2 - 2\\sqrt{3}x + 3) - \\frac{x}{\\sqrt{3}} + 1 - \\frac{1}{2}(y^2 - 2y + 1) + (y-1) + \\dots \\)<br>\n    After collecting like terms and simplifying the algebra, the final expression given in the solution is:<br>\n    \\( \\frac{1}{6}(x^2 - 4\\sqrt{3}x - 3(y^2 - 4y + \\ln 3)) \\).\n  </div>\n</div>"
+    }
+  }
+  
+]
